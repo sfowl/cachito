@@ -1203,6 +1203,7 @@ def test_load_list_deps():
             ],
         },
         "github.com/some-org/other-module/generated/foo": {},
+        "unsafe": {"Standard": True},
     }
 
 
