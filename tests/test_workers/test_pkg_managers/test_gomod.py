@@ -1193,7 +1193,6 @@ def test_load_list_deps():
     assert gomod._load_list_deps(list_deps_output) == {
         "github.com/some-org/some-module": {
             "Module": {"Path": "github.com/some-org/some-module", "Version": "v1.0.0"},
-            "Standard": False,
         },
         "github.com/some-org/other-module": {
             "Module": {"Path": "github.com/some-org/other-module", "Version": "v1.0.0"},
@@ -1202,9 +1201,8 @@ def test_load_list_deps():
                 "github.com/some-org/some-module",
                 "github.com/some-org/other-module/generated/foo",
             ],
-            "Standard": False,
         },
-        "github.com/some-org/other-module/generated/foo": {"Standard": False},
+        "github.com/some-org/other-module/generated/foo": {},
         "unsafe": {"Standard": True},
     }
 
