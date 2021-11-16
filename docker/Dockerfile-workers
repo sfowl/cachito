@@ -1,4 +1,4 @@
-FROM registry.fedoraproject.org/fedora:34
+FROM registry.fedoraproject.org/fedora:35
 LABEL maintainer="Red Hat"
 
 WORKDIR /src
@@ -10,6 +10,7 @@ RUN dnf -y install \
     gcc \
     git-core \
     krb5-devel \
+    libffi-devel \
     mercurial \
     npm \
     procps \
@@ -17,7 +18,11 @@ RUN dnf -y install \
     python3-pip \
     python3-setuptools \
     strace \
+    https://kojipkgs.fedoraproject.org//packages/golang/1.17/2.fc36/noarch/golang-src-1.17-2.fc36.noarch.rpm \
+    https://kojipkgs.fedoraproject.org//packages/golang/1.17/2.fc36/x86_64/golang-1.17-2.fc36.x86_64.rpm \
+    https://kojipkgs.fedoraproject.org//packages/golang/1.17/2.fc36/x86_64/golang-bin-1.17-2.fc36.x86_64.rpm \
     && dnf clean all
+
 COPY . .
 
 # All the requirements except pyarn should already be installed
