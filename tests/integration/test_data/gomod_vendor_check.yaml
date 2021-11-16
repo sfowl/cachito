@@ -43,6 +43,10 @@ correct_vendor:
         replaces: null
         type: go-package
         version: v0.0.0-20170915032832-14c0d48ead0c
+      - name: internal/abi
+        replaces: null
+        type: go-package
+        version: null
       - name: internal/bytealg
         replaces: null
         type: go-package
@@ -52,6 +56,14 @@ correct_vendor:
         type: go-package
         version: null
       - name: internal/fmtsort
+        replaces: null
+        type: go-package
+        version: null
+      - name: internal/goexperiment
+        replaces: null
+        type: go-package
+        version: null
+      - name: internal/itoa
         replaces: null
         type: go-package
         version: null
@@ -213,6 +225,10 @@ correct_vendor:
           replaces: null
           type: go-package
           version: v0.0.0-20170915032832-14c0d48ead0c
+        - name: internal/abi
+          replaces: null
+          type: go-package
+          version: null
         - name: internal/bytealg
           replaces: null
           type: go-package
@@ -222,6 +238,14 @@ correct_vendor:
           type: go-package
           version: null
         - name: internal/fmtsort
+          replaces: null
+          type: go-package
+          version: null
+        - name: internal/goexperiment
+          replaces: null
+          type: go-package
+          version: null
+        - name: internal/itoa
           replaces: null
           type: go-package
           version: null
@@ -378,9 +402,12 @@ correct_vendor:
     - "pkg:golang/fmt"
     - "pkg:golang/golang.org%2Fx%2Ftext%2Finternal%2Ftag@v0.0.0-20170915032832-14c0d48ead0c"
     - "pkg:golang/golang.org%2Fx%2Ftext%2Flanguage@v0.0.0-20170915032832-14c0d48ead0c"
+    - "pkg:golang/internal%2Fabi"
     - "pkg:golang/internal%2Fbytealg"
     - "pkg:golang/internal%2Fcpu"
     - "pkg:golang/internal%2Ffmtsort"
+    - "pkg:golang/internal%2Fgoexperiment"
+    - "pkg:golang/internal%2Fitoa"
     - "pkg:golang/internal%2Foserror"
     - "pkg:golang/internal%2Fpoll"
     - "pkg:golang/internal%2Frace"
@@ -443,6 +470,10 @@ no_vendor:
         replaces: null
         type: go-package
         version: v0.0.0-20170915032832-14c0d48ead0c
+      - name: internal/abi
+        replaces: null
+        type: go-package
+        version: null
       - name: internal/bytealg
         replaces: null
         type: go-package
@@ -452,6 +483,14 @@ no_vendor:
         type: go-package
         version: null
       - name: internal/fmtsort
+        replaces: null
+        type: go-package
+        version: null
+      - name: internal/goexperiment
+        replaces: null
+        type: go-package
+        version: null
+      - name: internal/itoa
         replaces: null
         type: go-package
         version: null
@@ -613,6 +652,10 @@ no_vendor:
           replaces: null
           type: go-package
           version: v0.0.0-20170915032832-14c0d48ead0c
+        - name: internal/abi
+          replaces: null
+          type: go-package
+          version: null
         - name: internal/bytealg
           replaces: null
           type: go-package
@@ -622,6 +665,14 @@ no_vendor:
           type: go-package
           version: null
         - name: internal/fmtsort
+          replaces: null
+          type: go-package
+          version: null
+        - name: internal/goexperiment
+          replaces: null
+          type: go-package
+          version: null
+        - name: internal/itoa
           replaces: null
           type: go-package
           version: null
@@ -778,9 +829,12 @@ no_vendor:
     - "pkg:golang/fmt"
     - "pkg:golang/golang.org%2Fx%2Ftext%2Finternal%2Ftag@v0.0.0-20170915032832-14c0d48ead0c"
     - "pkg:golang/golang.org%2Fx%2Ftext%2Flanguage@v0.0.0-20170915032832-14c0d48ead0c"
+    - "pkg:golang/internal%2Fabi"
     - "pkg:golang/internal%2Fbytealg"
     - "pkg:golang/internal%2Fcpu"
     - "pkg:golang/internal%2Ffmtsort"
+    - "pkg:golang/internal%2Fgoexperiment"
+    - "pkg:golang/internal%2Fitoa"
     - "pkg:golang/internal%2Foserror"
     - "pkg:golang/internal%2Fpoll"
     - "pkg:golang/internal%2Frace"
