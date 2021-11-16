@@ -308,10 +308,7 @@ def resolve_gomod(app_source_path, request, dep_replacements=None, git_dir_path=
 
             pkg_level_deps = []
             for dep_name in package_info[pkg_name].get("Deps", []):
-                # this check still passes with standard lib
                 dep_info = package_info.get(dep_name)
-                if dep_info is None:  # dependency is from the standard library
-                    continue
 
                 processed_pkg_deps.add(dep_name)
                 if "Standard" in dep_info:
